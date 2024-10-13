@@ -1,0 +1,62 @@
+<div class="site-section py-0">
+  <div class="owl-carousel hero-slide owl-style">
+
+    <div class="site-section" >
+      <div class="container"*ngIf="articles[0]">
+        <div class="half-post-entry d-block d-lg-flex bg-light">
+          <div class="img-bg" [style.background-image]="'url(' + articles[0].urlToImage + ')'"></div>
+          <div class="contents">
+            <span class="caption">{{ articles[0].source.name }}</span>
+            <h2><a [href]="articles[0].url">{{ articles[0].title }}</a></h2>
+            <p class="mb-3">{{ articles[0].description }}</p>
+            
+            <div class="post-meta">
+              <span class="d-block"><a href="#">{{ articles[0].author }} </a> in <a href="#">{{ articles[0].category }}</a></span>
+              <span class="date-read">{{ articles[0].publishedAt | date:'shortDate' }} <span class="mx-1">&bullet;</span> 3 min read <span class="icon-star2"></span></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container" *ngIf="articles[1]">
+        <div class="half-post-entry d-block d-lg-flex bg-light">
+          <div class="img-bg" [style.background-image]="'url(' + articles[1].urlToImage + ')'"></div>
+          <div class="contents">
+            <span class="caption">{{ articles[1].source.name }}</span>
+            <h2><a [href]="articles[1].url">{{ articles[1].title }}</a></h2>
+            <p class="mb-3"> {{ articles[1].description }}</p>
+            
+            <div class="post-meta">
+              <span class="d-block"><a href="#">{{ articles[1].author }}</a> in <a href="#">{{ articles[1].category }}</a></span>
+              <span class="date-read">{{ articles[1].publishedAt | date:'shortDate' }} <span class="mx-1">&bullet;</span> 3 min read <span class="icon-star2"></span></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-section">
+      <div class="container" *ngIf="articles[2]">
+        <div class="half-post-entry d-block d-lg-flex bg-light">
+          <div class="img-bg" [style.background-image]="'url(' + articles[2].urlToImage + ')'"></div>
+          <div class="contents">
+            <span class="caption">{{ articles[2].source.name }}</span>
+            <h2><a [href]="articles[2].url">{{ articles[2].title }}</a></h2>
+            <p class="mb-3">{{ articles[2].description }}</p>
+            
+            <div class="post-meta">
+              <span class="d-block"><a href="#">{{ articles[2].author }}</a> in <a href="#">{{ articles[2].category }}</a></span>
+              <span class="date-read">{{ articles[2].publishedAt | date:'shortDate' }} <span class="mx-1">&bullet;</span> 3 min read <span class="icon-star2"></span></span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
